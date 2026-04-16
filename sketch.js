@@ -6,5 +6,8 @@ function draw() {
   background(220);
   fill(255, 0, 0);
   rect(10, 10, 10, 10);
+  //hi my name is jane
+  rect(30, 10, 10, 10);
+  rect(50, 10, 10, 10);
   
 }
