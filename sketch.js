@@ -4,8 +4,7 @@ function setup() {
 
 function draw() {
   background(220);
-//hi
+  fill(255, 0, 0);
   rect(10, 10, 10, 10);
-//sssssssssssssss
-
+  
 }
