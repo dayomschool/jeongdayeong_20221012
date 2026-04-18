@@ -69,7 +69,7 @@ function draw() {
   for(let r = 0; r<12; r++){
     for(let c = 0; c<22; c++){
       if(maze[r][c] === '#'){
-        fill(0,0,255);
+        stroke(50,100,255);strokeWeight(6);fill(10,10,40);
         rect(c*128, r*128, 128, 128);
       } else if (maze[r][c] === '.') {
         fill(255,255,0);
