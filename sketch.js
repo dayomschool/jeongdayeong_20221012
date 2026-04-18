@@ -47,6 +47,12 @@ function draw() {
     pacStun = 0;
     moving = false;
 
+  if (maze[1][1] === '.') { maze[1][1] = ' '; beansLeft--; }
+    
+    score = 0; energy = 3; state = "play";
+
+    ghosts = [];
+
 
   }
 }
