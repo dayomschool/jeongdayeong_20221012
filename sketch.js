@@ -134,7 +134,7 @@ function draw() {
     //유령 이동
     for (let i = ghosts.length - 1; i>=0; i--) {
       let g = ghosts[i];
-      let nx = g.x + g.dx * 6; ny = g.y + g.dy * 6;
+      let nx = g.x + g.dx * 6; let ny = g.y + g.dy * 6;
       
       let hit = false;
       let pts = [[-30, -30], [30, -30], [-30, 30], [30, 30]];
@@ -206,7 +206,7 @@ function draw() {
 } // draw 끝
 
 function keyPressed() {
-  if (key == "r" || key == "R"|| keyCode === 'ㄱ') {
+  if (key == "r" || key == "R"|| key === 'ㄱ') {
     needreset = true;
   }
 }
