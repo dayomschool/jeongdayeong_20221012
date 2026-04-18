@@ -122,7 +122,7 @@ function draw() {
       beansLeft--;
       if(score >0 && score % 100 === 0) {
         let r =floor(random(12)), c = floor(random(22));
-        if(maze[r][c] !== '#' && dist(c*128+64, r*128+64, pacX, pacY) > 256){
+        if(maze[r][c] !== '#' && dist(c*128+64, r*128+64, pacX, pacY) > 512){
       }
           
 
