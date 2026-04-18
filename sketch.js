@@ -182,6 +182,10 @@ function draw() {
   }
   pop();
 
-  
+  fill(0);noStroke(); 
+  let ex = pacX, ey = pacY - 15;
+  if (pacDx === 1) ex += 5;
+  if (pacDx === -1) ex -= 5;
+  if (pacDy === -1 
 
 } // draw 끝
