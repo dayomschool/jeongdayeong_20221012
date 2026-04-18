@@ -146,10 +146,19 @@ function draw() {
 
       if (hit) {
         let d = random([[1,0], [-1,0], [0,1], [0,-1]]);
-      
-          
+        g.dx = d[0]; g.dy = d[1];
+      } else {
+        g.x = nx; g.y = ny;
+      }
+      if (g.x<-40) g.x = width + 40;
+      if (g.x>width+40) g.x = -40;
 
-          
-
+      if (pacStun === 0 && dist(g.x, g.y, pacX, pacY) < 75) {
+        energy--;
+        pacStun = 30; ghosts.splice(i, 1);
+        if (energy <= 0) state = "lose";
+      }
+    }
+  }
 
 }
