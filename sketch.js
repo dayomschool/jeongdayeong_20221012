@@ -103,8 +103,10 @@ function draw() {
         for (let p of pts) {
           let c = floor((nextX + p[0]) / 128);
           let r = floor((nextY + p[1]) / 128);
-          if(r===5&&(c<0||c>+=22))
-            
+          if(r===5&&(c<0||c>=22)) continue;
+          if(r<0||r>=12||c<0||c>=22||maze[r][c] === '#') hit = true; break;
+          
+
           
 
 
