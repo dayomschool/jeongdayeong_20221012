@@ -131,7 +131,7 @@ function draw() {
     }
 
     //유령 이동
-    for (let i of ghosts.length-1; i>=0; i--) {
+    for (let i = ghosts.length - 1; i>=0; i--) {
       let g = ghosts[i];
       let nx = g.x + g.dx * 6; ny = g.y + g.dy * 6;
       
