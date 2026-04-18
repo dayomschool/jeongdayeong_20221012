@@ -189,4 +189,8 @@ function draw() {
   if (pacDy === -1 || pacDy === 1) ex += 12;
   ellipse(ex, ey, 12, 12);
 
+  fill(255); textSize(60); textAlign(LEFT, TOP);
+  text("Score: " + score, 60, 30);
+  text("Energy: " + energy, 60, 90);
+
 } // draw 끝
