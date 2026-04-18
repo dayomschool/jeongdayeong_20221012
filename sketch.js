@@ -29,6 +29,8 @@ function draw() {
   if (needreset === true) {
     maze = [];
     beansLeft = 0;
+    for(let r = 0; r<12; r++){
+      let row = [];
 
   }
 }
