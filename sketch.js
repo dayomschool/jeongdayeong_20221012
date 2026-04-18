@@ -175,6 +175,13 @@ function draw() {
   if(paxDy === -1) rotate(-HALF_PI);
   fill(pacStun > 0 ? 'red' : 'yellow'); noStroke();
   if (moving) {
-    let
+    let open = sin(frameCount*0.3)*0.5 + 0.5;
+    arc(0, 0, 90, 90, open*0.6, TWO_PI - open*0.6, PIE);
+  } else {
+    ellipse(0, 0, 90, 90);
+  }
+  pop();
+
+  
 
 } // draw 끝
