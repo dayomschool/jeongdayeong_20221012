@@ -14,6 +14,7 @@ let mazeStr =[
   "#.........##.........#",
   "######################"
 ];
+
 let pacX, pacY;//팩맨 위치
 let paxDx, pacDy;//팩맨 이동 방향
 let pacStun, moving;//팩맨이 멈춰있는지, 움직이는지
@@ -162,8 +163,7 @@ function draw() {
   }
 //그리기
   for (let g of ghosts) {
-    fill(g.color); noStroke();
-    ellipse(g.x, g.y, 80, 80);
+    fill(g.color); noStroke();ellipse(g.x, g.y, 80, 80);
     fill(255); ellipse(g.x - 12, g.y -8,14,14); ellipse(g.x + 12, g.y -8,14,14);
     fill(0); ellipse(g.x - 12, g.y -8,6,6); ellipse(g.x + 12, g.y -8,6,6);
   }
