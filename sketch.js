@@ -52,6 +52,9 @@ function draw() {
     score = 0; energy = 3; state = "play";
 
     ghosts = [];
+    while (ghosts.length < 5) {
+      let r = floor(random(12)), c = floor(random(22));
+      let gr
 
 
   }
