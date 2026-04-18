@@ -18,7 +18,7 @@ let pacX, pacY;//팩맨 위치
 let paxDx, pacDy;//팩맨 이동 방향
 let pacStun, moving;//팩맨이 멈춰있는지, 움직이는지
 let ghosts = [];//유령 배열
-let score,energy
+let score,energy,beansLeft,state;
 function setup() {
   createCanvas(2816,1536);
 }
