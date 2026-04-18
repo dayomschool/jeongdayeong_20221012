@@ -123,7 +123,11 @@ function draw() {
       if(score >0 && score % 100 === 0) {
         let r =floor(random(12)), c = floor(random(22));
         if(maze[r][c] !== '#' && dist(c*128+64, r*128+64, pacX, pacY) > 512){
+          ghosts.push({x: c*128+64, y: r*128+64, dx: random([-1,1]), dy: 0,color: color(200)});
+        }
       }
+
+      if (beansLeft)
           
 
           
