@@ -206,7 +206,7 @@ function draw() {
 } // draw 끝
 
 function keyPressed() {
-  if (state !== "play" && key === 'r') {
+  if (key == "r" || key == "R"|| keyCode === 'ㄱ') {
     needreset = true;
   }
 }
