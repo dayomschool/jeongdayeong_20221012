@@ -164,6 +164,8 @@ function draw() {
   for (let g of ghosts) {
     fill(g.color); noStroke();
     ellipse(g.x, g.y, 80, 80);
+    fill(255); ellipse(g.x - 12, g.y -8,14,14); ellipse(g.x + 12, g.y -8,14,14);
+    fill(0); ellipse(g.x - 12, g.y -8,6,6); ellipse(g.x + 12, g.y -8,6,6);
   }
 
 } // draw 끝
