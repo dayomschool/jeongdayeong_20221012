@@ -54,7 +54,7 @@ function draw() {
     ghosts = [];
     while (ghosts.length < 5) {
       let r = floor(random(12)), c = floor(random(22));
-      let gr
+      let gx = c*128 + 64, gy = r*128 + 64;
 
 
   }
