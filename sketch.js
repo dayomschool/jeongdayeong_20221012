@@ -14,6 +14,8 @@ let mazeStr =[
   "#.........##.........#",
   "######################"
 ]
+let pacX, pacY;//팩맨 위치
+let paxDx, pacDy;//팩맨 이동 방향
 
 function setup() {
   createCanvas(2816,1536);
