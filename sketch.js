@@ -127,7 +127,8 @@ function draw() {
         }
       }
 
-      if (beansLeft <=0)
+      if (beansLeft <=0) state = "win";
+    }
           
 
           
