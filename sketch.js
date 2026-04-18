@@ -92,7 +92,12 @@ function draw() {
       if (keyIsDown(UP_ARROW)) { nDy = -1; }
       if (keyIsDown(DOWN_ARROW)) { nDy = 1; }
 
+      moving = false;
       if (nDx !== 0 || nDy !== 0) {
+        moving = true; paxDx = nDx; pacDy = nDy;
+        let nextX = pacX + paxDx * 5;
+        let nextY = pacY + pacDy * 5;
+        let c = floor(nextX / 128), r = floor(nextY / 128);
 
 
 }
