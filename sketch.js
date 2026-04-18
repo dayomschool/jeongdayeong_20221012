@@ -79,5 +79,13 @@ function draw() {
     }
   }
 
-  
+  // 게임 구성
+  if (state === "play") {
+    //팩맨 이동
+    if(pacStun > 0){
+      pacStun--;
+      moving = false;
+    }
+
+
 }
