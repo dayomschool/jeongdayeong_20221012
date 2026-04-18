@@ -100,10 +100,11 @@ function draw() {
 
         let hit = false;
         let pts = [[-35, -35], [35, -35], [-35, 35], [35, 35]];
-        for (let pt of pts) {
-          let checkX = nextX + pt[0];
-          let checkY = nextY + pt[1];
-        let c = floor(nextX / 128), r = floor(nextY / 128);
+        for (let p of pts) {
+          let c = floor((nextX + p[0]) / 128);
+          let r = floor((nextY + p[1]) / 128);
+          
+          
 
 
 }
