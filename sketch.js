@@ -160,5 +160,10 @@ function draw() {
       }
     }
   }
+//그리기
+  for (let g of ghosts) {
+    fill(g.color); noStroke();
+    ellipse(g.x, g.y, 80, 80);
+  }
 
 } // draw 끝
