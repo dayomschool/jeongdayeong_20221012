@@ -31,6 +31,14 @@ function draw() {
     beansLeft = 0;
     for(let r = 0; r<12; r++){
       let row = [];
+      for(let c = 0; c<22; c++){
+        row.push(mazeStr[r][c]);
+        if(mazeStr[r][c] === '.'){
+          beansLeft++;
+        }
+      }
+      maze.push(row);
+    }
 
   }
 }
