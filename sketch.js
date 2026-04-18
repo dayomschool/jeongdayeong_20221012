@@ -95,8 +95,14 @@ function draw() {
       moving = false;
       if (nDx !== 0 || nDy !== 0) {
         moving = true; paxDx = nDx; pacDy = nDy;
-        let nextX = pacX + paxDx * 5;
-        let nextY = pacY + pacDy * 5;
+        let nextX = pacX + paxDx * 10;
+        let nextY = pacY + pacDy * 10;
+
+        let hit = false;
+        let pts = [[-35, -35], [35, -35], [-35, 35], [35, 35]];
+        for (let pt of pts) {
+          let checkX = nextX + pt[0];
+          let checkY = nextY + pt[1];
         let c = floor(nextX / 128), r = floor(nextY / 128);
 
 
