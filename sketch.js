@@ -135,6 +135,15 @@ function draw() {
       let g = ghosts[i];
       let nx = g.x + g.dx * 6; ny = g.y + g.dy * 6;
       
+      let hit = false;
+      let pts = [[-30, -30], [30, -30], [-30, 30], [30, 30]];
+      for (let p of pts) {
+        let c = floor((nx + p[0]) / 128);
+        let r = floor((ny + p[1]) / 128);
+        if(r===5&&(c<0||c>=22)) continue;
+        if(r<0||r>=12||c<0||c>=22||maze[r][c] === '#') hit = true;
+      }
+      
           
 
           
