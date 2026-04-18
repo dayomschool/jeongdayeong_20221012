@@ -200,7 +200,13 @@ function draw() {
     fill(state === "win" ? color(255,230,0) : color(255,60,60));
     text(state === "win" ? "You Win!" : "Game Over", width/2, height/2-50);
     fill(255); textSize(60);
-    text("Press 'R' to Restart", width/2, height/2 + 50);
+    text("Press 'R' to Restart", width/2, height/2 + 120);
   }
 
 } // draw 끝
+
+function keyPressed() {
+  if (state !== "play" && key === 'r') {
+    needreset = true;
+  }
+}
