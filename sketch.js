@@ -103,7 +103,8 @@ function draw() {
         for (let p of pts) {
           let c = floor((nextX + p[0]) / 128);
           let r = floor((nextY + p[1]) / 128);
-          
+          if(r===5&&(c<0||c>+=22))
+            
           
 
 
