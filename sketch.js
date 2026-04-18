@@ -111,7 +111,11 @@ function draw() {
       }
     }
 
-    if (pacX<-45)
+    if (pacX<-45) pacX = width + 45;
+    if (pacX>width+45) pacX = -45;
+
+    //콩 먹는 부분
+    let pc = floor(pacX / 128), pr = floor(pacY / 128);
           
 
           
