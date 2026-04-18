@@ -186,6 +186,7 @@ function draw() {
   let ex = pacX, ey = pacY - 15;
   if (pacDx === 1) ex += 5;
   if (pacDx === -1) ex -= 5;
-  if (pacDy === -1 
+  if (pacDy === -1 || pacDy === 1) ex += 12;
+  ellipse(ex, ey, 12, 12);
 
 } // draw 끝
