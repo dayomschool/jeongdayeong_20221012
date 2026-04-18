@@ -72,8 +72,9 @@ function draw() {
         stroke(50,100,255);strokeWeight(6);fill(10,10,40);
         rect(c*128+8, r*128+8, 128-16, 128-16, 20);
       } else if (maze[r][c] === '.') {
+        noStroke();
         fill(255,255,0);
-        ellipse(c*128 + 64, r*128 + 64, 16);
+        ellipse(c*128 + 64, r*128 + 64, 20, 20);
       }
     }
 
