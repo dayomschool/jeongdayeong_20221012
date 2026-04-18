@@ -168,4 +168,13 @@ function draw() {
     fill(0); ellipse(g.x - 12, g.y -8,6,6); ellipse(g.x + 12, g.y -8,6,6);
   }
 
+  push();
+  translate(pacX, pacY);
+  if(paxDx === -1) rotate(PI);
+  if(paxDy === 1) rotate(HALF_PI);
+  if(paxDy === -1) rotate(-HALF_PI);
+  fill(pacStun > 0 ? 'red' : 'yellow'); noStroke();
+  if (moving) {
+    let
+
 } // draw 끝
