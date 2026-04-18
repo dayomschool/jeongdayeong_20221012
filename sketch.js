@@ -62,6 +62,8 @@ function draw() {
     needreset = false;
   }
 
+  background(0);
+
   
 
 
