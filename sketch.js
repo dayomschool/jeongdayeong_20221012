@@ -55,7 +55,7 @@ function draw() {
     while (ghosts.length < 5) {
       let r = floor(random(12)), c = floor(random(22));
       let gx = c*128 + 64, gy = r*128 + 64;
-      if (maze[r][c] !== ' ' && dist(gx, gy, pacX, pacY) > 512) {
+      if (maze[r][c] !== '#' && dist(gx, gy, pacX, pacY) > 512) {
         ghosts.push({x: gx, y: gy, dx: random([-1,1]), dy: 0,color: color(random(100,255), 200,200)});
       }
     }
