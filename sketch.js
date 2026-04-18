@@ -127,7 +127,7 @@ function draw() {
         }
       }
 
-      if (beansLeft)
+      if (beansLeft <=0)
           
 
           
