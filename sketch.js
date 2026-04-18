@@ -42,7 +42,7 @@ function draw() {
 
     pacX = 128*1.5;
     pacY = 128*1.5;
-    paxDx = 0;
+    pacDx = 0;
     pacDy = 0;
     pacStun = 0;
     moving = false;
@@ -95,8 +95,8 @@ function draw() {
 
       moving = false;
       if (nDx !== 0 || nDy !== 0) {
-        moving = true; paxDx = nDx; pacDy = nDy;
-        let nx = pacX + paxDx * 10;
+        moving = true; pacDx = nDx; pacDy = nDy;
+        let nx = pacX + pacDx * 10;
         let ny = pacY + pacDy * 10;
 
         let hit = false;
@@ -170,9 +170,9 @@ function draw() {
 
   push();
   translate(pacX, pacY);
-  if(paxDx === -1) rotate(PI);
-  if(paxDy === 1) rotate(HALF_PI);
-  if(paxDy === -1) rotate(-HALF_PI);
+  if(pacDx === -1) rotate(PI);
+  if(pacDy === 1) rotate(HALF_PI);
+  if(pacDy === -1) rotate(-HALF_PI);
   fill(pacStun > 0 ? 'red' : 'yellow'); noStroke();
   if (moving) {
     let open = sin(frameCount*0.3)*0.5 + 0.5;
