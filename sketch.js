@@ -116,6 +116,14 @@ function draw() {
 
     //콩 먹는 부분
     let pc = floor(pacX / 128), pr = floor(pacY / 128);
+    if (pr>=0 && pr<12 && pc>=0 && pc<22 && maze[pr][pc] === '.') {
+      maze[pr][pc] = ' ';
+      score += 10;
+      beansLeft--;
+      if(score >0 && score % 100 === 0) {
+        let r =floor(random(12)), c = floor(random(22));
+        if(maze[r][c] !== '#' && dist(c*128+64, r*128+64, pacX, pacY) > 256){
+      }
           
 
           
