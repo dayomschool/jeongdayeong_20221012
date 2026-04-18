@@ -97,18 +97,18 @@ function draw() {
       if (nDx !== 0 || nDy !== 0) {
         moving = true; paxDx = nDx; pacDy = nDy;
         let nx = pacX + paxDx * 10;
-        let nextY = pacY + pacDy * 10;
+        let ny = pacY + pacDy * 10;
 
         let hit = false;
         let pts = [[-35, -35], [35, -35], [-35, 35], [35, 35]];
         for (let p of pts) {
-          let c = floor((nextX + p[0]) / 128);
-          let r = floor((nextY + p[1]) / 128);
+          let c = floor((nx + p[0]) / 128);
+          let r = floor((ny + p[1]) / 128);
           if(r===5&&(c<0||c>=22)) continue;
           if(r<0||r>=12||c<0||c>=22||maze[r][c] === '#') hit = true;
         }
         
-        if (!hit) {pacX = nX; pacY = nY;}
+        if (!hit) {pacX = nx; pacY = ny;}
       }
     }
 
