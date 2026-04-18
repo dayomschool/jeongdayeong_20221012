@@ -26,6 +26,7 @@ function setup() {
 }
 
 function draw() {
+
   if (needreset === true) {
     maze = [];
     beansLeft = 0;
@@ -33,10 +34,8 @@ function draw() {
       let row = [];
       for(let c = 0; c<22; c++){
         row.push(mazeStr[r][c]);
-        if(mazeStr[r][c] === '.'){
-          beansLeft++;
+        if(mazeStr[r][c] === '.')beansLeft++;
         }
-      }
       maze.push(row);
     }
 
@@ -47,8 +46,8 @@ function draw() {
     pacStun = 0;
     moving = false;
 
-  if (maze[1][1] === '.') { maze[1][1] = ' '; beansLeft--; }
-    
+    if (maze[1][1] === '.') { maze[1][1] = ' '; beansLeft--; }
+  
     score = 0; energy = 3; state = "play";
 
     ghosts = [];
@@ -57,12 +56,13 @@ function draw() {
       let gx = c*128 + 64, gy = r*128 + 64;
       if (maze[r][c] === ' ' && dist(gx, gy, pacX, pacY) > 512) {
         ghosts.push({x: gx, y: gy, dx: random([-1,1]), dy: 0,color: color(random(100,255), 200,200)});
-
       }
     }
 
     needreset = false;
   }
+
+  
 
 
 
