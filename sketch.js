@@ -194,7 +194,7 @@ function draw() {
   textAlign(RIGHT, TOP);
   text("Energy: " + energy, width - 60, 30);
 
-  if (state === "play") {
+  if (state !== "play") {
     fill(0,180); rect(0,0,width,height);
     textAlign(CENTER, CENTER); textSize(180);
     fill(state === "win" ? color(255,230,0) : color(255,60,60));
