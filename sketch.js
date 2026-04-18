@@ -85,7 +85,14 @@ function draw() {
     if(pacStun > 0){
       pacStun--;
       moving = false;
-    }
+    } else {
+      let nDx = 0, nDy = 0;
+      if (keyIsDown(LEFT_ARROW)) { nDx = -1; }
+      if (keyIsDown(RIGHT_ARROW)) { nDx = 1; }
+      if (keyIsDown(UP_ARROW)) { nDy = -1; }
+      if (keyIsDown(DOWN_ARROW)) { nDy = 1; }
+
+      if (nDx !== 0 || nDy !== 0) {
 
 
 }
