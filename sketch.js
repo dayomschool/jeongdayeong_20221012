@@ -194,4 +194,7 @@ function draw() {
   textAlign(RIGHT, TOP);
   text("Energy: " + energy, width - 60, 30);
 
+  if (state === "play") {
+    fill(0,180);
+
 } // draw 끝
