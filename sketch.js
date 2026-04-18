@@ -96,7 +96,7 @@ function draw() {
       moving = false;
       if (nDx !== 0 || nDy !== 0) {
         moving = true; paxDx = nDx; pacDy = nDy;
-        let nextX = pacX + paxDx * 10;
+        let nx = pacX + paxDx * 10;
         let nextY = pacY + pacDy * 10;
 
         let hit = false;
