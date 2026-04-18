@@ -191,6 +191,7 @@ function draw() {
 
   fill(255); textSize(60); textAlign(LEFT, TOP);
   text("Score: " + score, 60, 30);
-  text("Energy: " + energy, 60, 90);
+  textAlign(RIGHT, TOP);
+  text("Energy: " + energy, width - 60, 30);
 
 } // draw 끝
