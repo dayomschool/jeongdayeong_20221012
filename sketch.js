@@ -195,6 +195,9 @@ function draw() {
   text("Energy: " + energy, width - 60, 30);
 
   if (state === "play") {
-    fill(0,180);
+    fill(0,180); rect(0,0,width,height);
+    textAlign(CENTER, CENTER); textSize(180);
+    fill(state === "win" ? color(255,230,0) : color(255,60,60));
+    text(state === "win" ? "You Win!" : "Game Over", width/2, height/2-50);
 
 } // draw 끝
