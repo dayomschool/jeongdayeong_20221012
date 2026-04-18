@@ -143,6 +143,9 @@ function draw() {
         if(r===5&&(c<0||c>=22)) continue;
         if(r<0||r>=12||c<0||c>=22||maze[r][c] === '#') hit = true;
       }
+
+      if (hit) {
+        let d = random([[1,0], [-1,0], [0,1], [0,-1]]);
       
           
 
