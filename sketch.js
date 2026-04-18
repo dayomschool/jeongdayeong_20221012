@@ -40,5 +40,13 @@ function draw() {
       maze.push(row);
     }
 
+    pacX = 128*1.5;
+    pacY = 128*1.5;
+    paxDx = 0;
+    pacDy = 0;
+    pacStun = 0;
+    moving = false;
+
+
   }
 }
