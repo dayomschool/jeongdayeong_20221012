@@ -64,7 +64,18 @@ function draw() {
 
   background(0);
 
-  
+  //미로 콩 그리는 부분
+
+  for(let r = 0; r<12; r++){
+    for(let c = 0; c<22; c++){
+      if(maze[r][c] === '#'){
+        fill(0,0,255);
+        rect(c*128, r*128, 128, 128);
+      } else if (maze[r][c] === '.') {
+        fill(255,255,0);
+        ellipse(c*128 + 64, r*128 + 64, 16);
+      }
+    }
 
 
 
